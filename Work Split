@@ -1,0 +1,70 @@
+General work split:
+Stephanie Ng
+Scene builder UI
+Code Prototype versions (clickable and editable values)
+General backend assistance
+
+Neel Neel Patel
+
+General Backend
+Data storage
+UI connections
+
+
+
+Code wise split: 
+
+Stephanie
+Add Photos Pane
+Open Windows’s built in file chooser
+Return Path, File Name, Date
+Edit Metadata Pane
+Given: File Name, Caption, Date Taken, Tags
+Edit Caption, date, tags, and return the new values
+Neel handles storage
+View Image Pane (slideshow)
+Left and Right buttons
+Edit Metadata button launches respective pane
+Current User Pane
+Given Username, password, 
+Editing should change it to textfields and save it in the instance
+Closing the window = returning the values => storage
+Manage Users Pane
+Add, edit, delete users
+Storage… 
+
+Neel
+Login Page
+Storage 
+Landing Pane - Album
+STORAGE
+Add. rename, delete album from storage
+UI selection
+Open Album opens Photos Pane
+Photos Pane
+STORAGE
+TableVIew
+Get all values of file name/path/caption etc
+Add Photo
+Returns File Path, date taken, file name
+Edit Metadata
+Returns New date taken, new caption, new tags
+Delete Photo
+Remove file from storage
+Copy To
+Try: Go back to Album Pane, hide old buttons, show Copy here
+Move all data with respect to current album and new selected album
+Move To
+Try: Go back to Album Pane, hide old buttons, show Copy here
+Move all data with respect to current album and new selected album
+Search button
+Opens search pane
+UI..
+Returns search terms and search through storage
+Display and list pictures
+Search Pane
+UI :(
+Return search terms
+Tags Pane
+Add/Delete
+Deleting = all photos lose that tag

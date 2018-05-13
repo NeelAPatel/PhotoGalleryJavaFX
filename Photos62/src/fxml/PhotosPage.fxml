@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PhotosPageController">
+   <children>
+      <Separator layoutX="640.0" layoutY="96.0" orientation="VERTICAL" prefHeight="550.0" />
+      <AnchorPane prefHeight="100.0" prefWidth="890.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9f9f9" height="100.0" stroke="TRANSPARENT" strokeType="INSIDE" width="890.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Rectangle>
+            <Button fx:id="btnCreateFromResults" layoutX="218.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="212.0" text="Create Album from Results" />
+            <Button fx:id="btnBackToAlbums" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="40.0" text="&lt;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnAdd" layoutX="219.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="60.0" text="add" />
+            <Button fx:id="btnEdit" layoutX="294.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="60.0" text="edit" />
+            <Button fx:id="btnDelete" layoutX="369.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="60.0" text="delete" />
+            <Button fx:id="btnCopyTo" layoutX="544.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="60.0" text="Copy To" />
+            <Button fx:id="btnMoveTo" layoutX="619.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="80.0" prefWidth="60.0" text="Move &#10;To" />
+            <Label fx:id="lblPanelName" layoutX="60.0" layoutY="34.0" prefHeight="32.0" prefWidth="151.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="scrPane" layoutX="26.0" layoutY="121.0" prefHeight="500.0" prefWidth="600.0">
+         <content>
+            <TilePane fx:id="tilePane" hgap="10.0" prefHeight="310.0" prefWidth="582.0" vgap="10.0">
+               <children>
+                  
+               </children>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </TilePane>
+         </content>
+      </ScrollPane>
+      <Button fx:id="btnExpandImg" layoutX="820.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnPress" prefHeight="40.0" prefWidth="40.0" />
+      <ListView fx:id="listSelTags" editable="true" layoutX="659.0" layoutY="458.0" prefHeight="162.0" prefWidth="200.0" />
+      <Label fx:id="lblSelFileName" layoutX="660.0" layoutY="345.0" prefHeight="20.0" prefWidth="200.0" text="FileName.png">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSelCaption" layoutX="659.0" layoutY="371.0" prefHeight="20.0" prefWidth="200.0" text="Caption">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSelAlbumName" layoutX="659.0" layoutY="397.0" prefHeight="20.0" prefWidth="200.0" text="AlbumName">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSelDate" layoutX="659.0" layoutY="423.0" prefHeight="20.0" prefWidth="200.0" text="01/01/1997">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="120.0" text="Preview Pane" />
+      <Separator layoutX="659.0" layoutY="449.0" prefWidth="200.0" />
+      <StackPane layoutX="660.0" layoutY="140.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imgVSelPhoto" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow color="#000000b2" height="40.0" offsetX="5.0" offsetY="5.0" radius="19.5" width="40.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

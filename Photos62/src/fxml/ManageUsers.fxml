@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageUsersController">
+   <children>
+      <ListView fx:id="listviewUsers" layoutX="15.0" layoutY="15.0" prefHeight="413.0" prefWidth="285.0" />
+      <Button fx:id="btnAddUser" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnPress" text="Add User" />
+      <Button fx:id="btnRenameUser" layoutX="241.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnPress" text="Rename" />
+      <Button fx:id="btnDeleteUser" layoutX="127.0" layoutY="447.0" mnemonicParsing="false" onAction="#btnPress" text="Delete" />
+      <Button fx:id="btnClose" layoutX="130.0" layoutY="494.0"  onAction="#btnPress" mnemonicParsing="false" text="Close" />
+   </children>
+</AnchorPane>

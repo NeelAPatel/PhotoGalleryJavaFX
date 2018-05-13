@@ -1,0 +1,41 @@
+/*#btnUser{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-opacity:0.0;
+}
+
+#btnUser:hover{
+	  -fx-opacity:1.0;	
+}
+
+#paneBtnUser{
+	-fx-opacity:0;
+}
+
+
+.button:focused {
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 1;
+    -fx-border-style: solid, segments(1, 2);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+
+.button:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+} */
+
+
+
+#btnOpenAlbum{
+	-fx-font-size: 14px;
+}
+#btnOpenAlbum:hover{
+	-fx-font-size: 14px;
+}
+#btnOpenAlbum:pressed{
+	-fx-font-size: 14px;
+}
